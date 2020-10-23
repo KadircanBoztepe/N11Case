@@ -8,16 +8,10 @@ import util.Description;
 
 public class CoreTest extends PageBase {
 
-    @Test
-    @Description("Anasayfanın açıldığı onaylanıyor.")
-    public void assertHomePageTest() throws Throwable {
-        HomePage homePage = new HomePage(driver);
-        homePage.closedPopUpbButton()
-                 .assertHomePageIsDisplayed();
-    }
 
-     @Test
-    @Description("Login ekranı açılıp, bir kullanıcı ile login olunuyor.")
+
+    @Test
+    @Description("Tüm seneryolar koşturuluyor.")
     public void successLoginTest() throws Throwable {
          HomePage homePage = new HomePage(driver);
          homePage.closedPopUpbButton()
